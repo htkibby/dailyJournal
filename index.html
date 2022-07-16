@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Journal</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <h2>Daily Journal</h2>
+  <form class="entryForm">
+    <fieldset class="fieldText">
+      <label for="entryDate">Date</label>
+      <input type="date" name="entryDate" class="entryForm__date">
+    </fieldset>
+    <fieldset class="fieldText">
+      <label for="conceptsCovered">Concepts Covered</label>
+      <input type="text" name="conceptsCovered" class="entryForm_concept">
+    </fieldset>
+    <fieldset class="fieldText">
+      <label for="entries">Jorunal Entries</label>
+      <textarea id="entries" name="entries"></textarea>
+    </fieldset>
+    <fieldset class="fieldText">
+      <label for="mood">Mood</label>
+      <select name="mood" id="mood" class="button">
+        <option value="neutral">Neutral</option>
+        <option value="intrigued">Intrigued</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+      </select>
+    </fieldset>
+    <fieldset class="fieldText">
+      <button type="button" class="button">Record Jounral Entry</button>
+    </fieldset>
+  </form>
+  <article id="entries"></article>
+  </main>
+  <footer></footer>
+</body>
+</html>

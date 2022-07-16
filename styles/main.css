@@ -1,0 +1,15 @@
+.entryForm{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.fieldText{
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+}
+
+.button{
+   width: 200px;
+}
