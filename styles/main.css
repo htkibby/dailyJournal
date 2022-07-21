@@ -4,11 +4,16 @@
    flex-wrap: wrap;
 }
 
+.main{
+   background-color: #279CE1;
+}
+
 .fieldText{
    display: flex;
    flex-direction: column;
    width: 300px;
    font-family: 'Ubuntu', sans-serif;
+   background-color: #CDE6F5;
 }
 
 .button{
@@ -22,4 +27,10 @@
    padding: 20px;
    margin-bottom: 10px;
    font-family: 'Oswald', sans-serif;
+}
+
+.moe{
+   width: 300px;
+   float: right;
+   margin-right: 20%;
 }
