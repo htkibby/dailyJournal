@@ -4,8 +4,8 @@
    flex-wrap: wrap;
 }
 
-.main{
-   background-color: #279CE1;
+.body{
+   background-color: #DFF3E4;
 }
 
 .fieldText{
@@ -13,7 +13,7 @@
    flex-direction: column;
    width: 300px;
    font-family: 'Ubuntu', sans-serif;
-   background-color: #CDE6F5;
+   background-color: #DFF3E4;
 }
 
 .button{
@@ -22,7 +22,7 @@
 
 .header{
    text-align: center;
-   background-color: #1f2041;
+   background-color: #1d2951;
    color: white;
    padding: 20px;
    margin-bottom: 10px;
@@ -33,4 +33,5 @@
    width: 300px;
    float: right;
    margin-right: 20%;
+   margin-top: 2%;
 }
