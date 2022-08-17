@@ -63,3 +63,11 @@ for (let entryOdd of entries) {
       console.log (entryOdd)
    }
 };
+
+let htmlEntries = "";
+
+for(let entry of entries){
+   htmlEntries += `<p class="entryActual">Entry: ${entry.entry}</p>`
+}
+
+document.getElementById('entries').innerHTML = htmlEntries;
