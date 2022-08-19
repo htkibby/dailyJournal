@@ -1,14 +1,14 @@
-.entryForm{
+.entryForm {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
 }
 
-.body{
+.body {
    background-color: #DFF3E4;
 }
 
-.fieldText{
+.fieldText {
    display: flex;
    flex-direction: column;
    width: 300px;
@@ -16,11 +16,11 @@
    background-color: #DFF3E4;
 }
 
-.button{
+.button {
    text-align: center;
 }
 
-.header{
+.header {
    text-align: center;
    background-color: #1d2951;
    color: white;
@@ -29,9 +29,23 @@
    font-family: 'Oswald', sans-serif;
 }
 
-.moe{
+.moe {
    width: 300px;
    float: right;
    margin-right: 20%;
    margin-top: 2%;
+}
+
+.entries {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+.entryBox {
+   border: black 3px solid;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 10px;
 }
