@@ -5,9 +5,9 @@ let htmlEntries = "";
 
 const displayMood = (mood) => {
       if(mood !== "Sad") {
-         return `<p class="mood">Mood: ${mood}<br></br></section>`
+         return `<p class="mood">Mood: ${mood}</section>`
       } else {
-         return `<p class="sadMood">Mood: ${mood}<br></br></section>`
+         return `<p class="sadMood">Mood: ${mood}</section>`
       }
 }
 
