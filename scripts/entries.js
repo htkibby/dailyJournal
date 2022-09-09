@@ -50,7 +50,13 @@ const entries = [
    }
 ]
 
+ export const addNewEntry = (entry) => {
+   entries.push(entry)
+   document.dispatchEvent(new CustomEvent("stateChanged"))
+ }
+
 export const getJournalEntries = () => {
-   const copyOfEntries = entries.map(entry => ({...entry}))
+   const copyOfEntries = entries.map(entry => {return {...entry}})
    return copyOfEntries
  }
+
