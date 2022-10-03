@@ -1,6 +1,8 @@
-import {addNewEntry, getJournalEntries} from './entries.js';
+import {addNewEntry, fetchEntries, getJournalEntries} from './entries.js';
 
-document.addEventListener("stateChanged", event => {
+const mainContainer = document.querySelector('#entries')
+
+mainContainer.addEventListener("stateChanged", event => {
    displayEntries()
 })
 
@@ -11,7 +13,6 @@ const displayMood = (mood) => {
          return `<p class="sadMood">Mood: ${mood}</section>`
       }
 }
-
 
 
 
@@ -28,10 +29,12 @@ document.addEventListener('click', (e) => {
          mood: mood
       }
       addNewEntry(newEntry)
+      document.getElementById('entryForm').reset()
    }
 })
 
-const displayEntries = () => {
+const displayEntries = async () => {
+   await fetchEntries();
    let htmlEntries = "";
    const entries = getJournalEntries();
    for(const entry of entries){
